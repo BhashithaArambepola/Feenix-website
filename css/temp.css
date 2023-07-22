@@ -60,10 +60,12 @@ background: black !important;
 }
 
 #home-cover{
+    /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
     background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/feenix logo.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+
 
 }
 #about-cover{
@@ -321,21 +323,21 @@ background-image: url("../img/home/cover 1.jpg");
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.service-item {
+.service-item-1 {
     padding: 40px;
     padding-left: 0px !important;
     /*background: #fff;*/
     height: 100%;
 }
 
-.service-item .icon {
+.service-item-1 .icon {
     width: 48px;
     height: 48px;
     position: relative;
     margin-bottom: 50px;
 }
 
-.service-item .icon i {
+.service-item-1 .icon i {
     color: #1c1c1c;
     font-size: 60px;
     transition: ease-in-out 0.3s;
@@ -344,7 +346,7 @@ background-image: url("../img/home/cover 1.jpg");
     line-height: 1.8;
 }
 
-.service-item .icon:before {
+.service-item-1 .icon:before {
     position: absolute;
     content: "";
     height: 100%;
@@ -357,7 +359,7 @@ background-image: url("../img/home/cover 1.jpg");
     transition: 0.3s;
 }
 
-.service-item h3 {
+.service-item-1 h3 {
     color: black;
     font-weight: 500;
     margin: 0 0 20px 0;
@@ -369,21 +371,21 @@ background-image: url("../img/home/cover 1.jpg");
     transition: 0.3s;
 }
 
-.service-item p {
+.service-item-1 p {
 font-weight: 400 !important;
 }
 
-.service-item .readmore {
+.service-item-1 .readmore {
     margin-top: 15px;
     display: inline-block;
     color: var(--secondary);
 }
 
-.service-item:hover .icon:before {
+.service-item-1:hover .icon:before {
     background: var(--secondary);
 }
 
-.service-item:hover h3 {
+.service-item-1:hover h3 {
     border-color: var(--secondary);
 }
 /*--------------------------------------------------------------
