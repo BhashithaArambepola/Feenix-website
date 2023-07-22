@@ -238,6 +238,9 @@ nav{
 .min-vh-3{
     min-height: 20vh !important;
 }
+.min-vh-4{
+    min-height: 30vh !important;
+}
 .min-vh-2{
     min-height: 10vh !important;
 }
@@ -247,6 +250,9 @@ nav{
 
 /*mobile*/
 @media (max-width: 425px) {
+    .min-vh-4{
+        min-height: 40vh !important;
+    }
     .min-vh-3{
         min-height: 30vh !important;
     }
@@ -287,6 +293,9 @@ nav{
         font-size: 44px !important;
         font-weight: 500;
         line-height: 53px !important;
+    }
+    .min-vh-4{
+        min-height: 45vh !important;
     }
     .min-vh-3{
         min-height: 35vh !important;

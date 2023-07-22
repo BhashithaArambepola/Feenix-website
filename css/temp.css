@@ -60,15 +60,35 @@ background: black !important;
 }
 
 #home-cover{
-    /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/woman-touching-power-button-virtual-screen-smart-home-technology.jpg");*/
-    background-size: cover;
-    background-position: center;
+    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/feenix logo.png");
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
 
 }
+#about-cover{
+    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 @media (max-width: 575px) {
     #home-cover{
+        /*background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");*/
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+
+    }
+    #about-cover{
         background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+
+    }
+    #home-portfolio{
+        background:linear-gradient(270deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/wall-full-off-old-photos-photo-frames.jpg");
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
@@ -304,7 +324,7 @@ background-image: url("../img/home/cover 1.jpg");
 }
 
 .service-item .icon i {
-    color: var(--dark);
+    color: #1c1c1c;
     font-size: 60px;
     transition: ease-in-out 0.3s;
     z-index: 2;
@@ -811,3 +831,6 @@ background-size: cover;
     100% { content:"#Success";}
 }
 
+#home-contact{
+min-height: 70vh;
+}
