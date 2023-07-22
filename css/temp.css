@@ -173,6 +173,18 @@ background: black !important;
 .features .nav-tabs {
     border: 0;
 }
+.navbar-img:hover{
+    animation: rotateAnimation 1s linear ;
+
+}
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .features .nav-link {
     padding: 15px 0;
@@ -388,6 +400,17 @@ font-weight: 400 !important;
     color: var(--dark);
 
 }
+/*--------------------------------------------------------------
+#Portfolio
+--------------------------------------------------------------*/
+#home-portfolio{
+    background:linear-gradient(79deg, rgba(255,255,255,0.1) 30%, rgb(255, 255, 255,0.5) 40%, rgba(255, 255, 255, 1) 60%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -768,4 +791,23 @@ font-weight: 400 !important;
     }
 }
 
+
+/***********************************/
+#spin {
+    color: #f4861c;
+ }
+#spin:after {
+    content:"";
+    animation: spin 6s linear infinite;
+}
+@keyframes spin {
+    0% { content:"#Success";}
+
+    25% { content:"#Design";}
+
+    50% { content: "#Deliver"; }
+
+    75% { content: "#Develop"; }
+    100% { content:"#Success";}
+}
 
