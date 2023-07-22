@@ -102,7 +102,7 @@ background: black !important;
 
     }
     #home-portfolio{
-        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/wall-full-off-old-photos-photo-frames.jpg");
+        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/close-up-animal-portrait-vibrant-feathered-beaks-staring-generated-by-ai.jpg");
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
@@ -438,7 +438,7 @@ font-weight: 400 !important;
 #Portfolio
 --------------------------------------------------------------*/
 #home-portfolio{
-    background:linear-gradient(79deg, rgba(255,255,255,0.1) 30%, rgb(255, 255, 255,0.7) 40%, rgba(255, 255, 255, 1) 60%), url("../img/home/portfolio/wall-full-off-old-photos-photo-frames.jpg");
+    background:linear-gradient(90deg, rgba(255,255,255,0.1) 30%, rgb(255, 255, 255,0.7) 50%, rgba(255, 255, 255, 1) 60%), url("../img/close-up-animal-portrait-vibrant-feathered-beaks-staring-generated-by-ai.jpg");
 background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
