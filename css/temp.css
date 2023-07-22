@@ -876,15 +876,16 @@ min-height: 70vh;
 .service-item {
     position: relative;
     height: 350px;
-    padding: 30px 25px;
-    background: #FFFFFF;
+    /*padding: 30px 25px;*/
+    /*background: var(--primary);*/
+    background: #1c1c1c;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
 }
 
 .service-item:hover {
-    /*background: var(--primary);*/
-    background: #1c1c1c;
+    background: var(--primary);
+    /*background: #1c1c1c;*/
 }
 
 .service-item .service-icon {
@@ -907,23 +908,25 @@ min-height: 70vh;
 .service-item h5,
 .service-item p {
     transition: .5s;
+    color: var(--light);
 }
 
 .service-item:hover h5,
 .service-item:hover p {
-    color: var(--light);
+    /*color: var(--light);*/
+    color: #ffffff;
 }
 
 .service-item a.btn {
     position: relative;
     display: flex;
-    color: var(--primary);
+    color: var(--light);
     transition: .5s;
     z-index: 1;
 }
 
 .service-item:hover a.btn {
-    color: var(--primary);
+    color: var(--light);
 }
 
 .service-item a.btn::before {
@@ -934,13 +937,14 @@ min-height: 70vh;
     top: 0;
     left: 0;
     border-radius: 35px;
-    background: #DDDDDD;
+    background: var(--primary);
     transition: .5s;
     z-index: -1;
 }
 
 .service-item:hover a.btn::before {
     width: 100%;
-    background: var(--light);
+    background: #1c1c1c;
+    border-radius: 5px;
 }
 
