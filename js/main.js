@@ -7,8 +7,9 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 2500); // Change 1 to 3000 (3 seconds in milliseconds)
     };
+
     spinner();
     
     
