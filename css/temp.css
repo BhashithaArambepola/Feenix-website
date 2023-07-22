@@ -829,6 +829,7 @@ background-size: cover;
 /***********************************/
 #spin {
     color: #f4861c;
+    font-weight: 700;
  }
 #spin:after {
     content:"";
