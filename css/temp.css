@@ -79,9 +79,9 @@ background: black !important;
     background-repeat: no-repeat;
 }
 #contact-cover{
-    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/modern-art-studio-composition.jpg");
-    background-size: cover;
-    background-position: center;
+    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
 }
 @media (max-width: 575px) {
