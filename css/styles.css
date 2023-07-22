@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
 }
 .bg-transparent{
-    background-color: rgba(255, 255, 255, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
 /*** Spinner ***/
 #spinner {

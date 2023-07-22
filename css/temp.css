@@ -61,7 +61,7 @@ background: black !important;
 
 #home-cover{
     /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
-    background:linear-gradient(80deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.01)), url("../img/home/beautiful-bird-graffiti-building.jpg");
+    background:linear-gradient(80deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.04) 80%), url("../img/home/beautiful-bird-graffiti-building.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -878,7 +878,7 @@ min-height: 70vh;
     height: 350px;
     /*padding: 30px 25px;*/
     /*background: var(--primary);*/
-    background: #1c1c1c;
+    background: rgba(28, 28, 28, 0.68);
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
 }
@@ -940,6 +940,14 @@ min-height: 70vh;
     background: var(--primary);
     transition: .5s;
     z-index: -1;
+}
+
+.services-menu{
+    background:linear-gradient(90deg, rgba(31, 29, 29, 0.9) 30%, rgba(31, 29, 29, 0.9)50%, rgba(31, 29, 29, 0.9) 60%), url("../img/home/portfolio/glowing-bonfire-burning-bright-fractal-blaze-pattern-generated-by-ai.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 .service-item:hover a.btn::before {
