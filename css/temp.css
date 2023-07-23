@@ -973,3 +973,33 @@ min-height: 70vh;
     font-weight: 600;
 
 }
+
+/*service tabs*/
+.web-tab{
+    background:linear-gradient(90deg, rgb(17, 17, 17) 40%, rgba(31, 29, 29, 0.85) 60%, rgba(31, 29, 29, 0.07) 80%), url("../img/home/modern-businessman-working-computer-dark-office-generated-by-ai.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.marketing-tab{
+    background:linear-gradient(90deg, rgb(17, 17, 17) 40%, rgba(31, 29, 29, 0.85) 60%, rgba(31, 29, 29, 0.07) 80%), url("../img/home/laptop-with-graph-screen-that-says-29-it.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.creativeStudio-tab{
+    background:linear-gradient(90deg, rgb(17, 17, 17) 40%, rgba(31, 29, 29, 0.85) 60%, rgba(31, 29, 29, 0.07) 80%), url("../img/home/modern-office-space-illuminated-by-glowing-computer-monitor-generated-by-ai.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+.perfomanceMarketing-tab{
+    background:linear-gradient(90deg, rgb(17, 17, 17) 40%, rgba(31, 29, 29, 0.85) 60%, rgba(31, 29, 29, 0.07) 80%), url("../img/home/zoom-colorful-glass-circle-abstract-generated-by-ai.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
