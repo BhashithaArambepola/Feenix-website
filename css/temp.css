@@ -102,7 +102,7 @@ background: black !important;
 
     }
     #home-portfolio{
-        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/close-up-animal-portrait-vibrant-feathered-beaks-staring-generated-by-ai.jpg");
+        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/interior-design-with-armchair-potted-plant.jpg");
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
@@ -399,8 +399,8 @@ font-weight: 400 !important;
 # Clients
 --------------------------------------------------------------*/
 .clients-logo {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .section-border {
@@ -438,11 +438,13 @@ font-weight: 400 !important;
 #Portfolio
 --------------------------------------------------------------*/
 #home-portfolio{
-    background:linear-gradient(90deg, rgba(255,255,255,0.1) 30%, rgb(255, 255, 255,0.7) 50%, rgba(255, 255, 255, 1) 60%), url("../img/close-up-animal-portrait-vibrant-feathered-beaks-staring-generated-by-ai.jpg");
-background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /*background:linear-gradient(90deg, rgba(255,255,255,0.1) 10%, rgb(255, 255, 255,0.7) 300%, rgba(255, 255, 255, 1) 60%), url("../img/home/interior-design-with-armchair-potted-plant.jpg") !important;*/
 
+
+    /*background:linear-gradient(75deg, rgba(255, 255, 255, 0.18) 10%, rgba(255, 255, 255, 0.55) 20%, rgb(255, 255, 255) 30%), url("../img/home/interior-design-with-armchair-potted-plant.jpg") !important;*/
+    background-repeat: no-repeat !important ;
+    background-size: contain;
+    background-position: left;
 }
 
 
@@ -882,11 +884,15 @@ min-height: 70vh;
     background: rgba(28, 28, 28, 0.68);
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .5s;
+    /*border: 1px solid rgb(244, 134, 28);*/
+    border: 1px solid #fff;
+    border-radius: 10px !important;
 }
 
 .service-item:hover {
     background: var(--primary);
     /*background: #1c1c1c;*/
+    border: 1px solid rgb(244, 134, 28);
 }
 
 .service-item .service-icon {
@@ -1002,4 +1008,79 @@ min-height: 70vh;
     background-position: right;
     background-repeat: no-repeat;
 
+}
+
+/*------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.section {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.first, .last {
+    background: #eee;
+}
+.scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.item {
+    width: 300px;
+    min-width: 300px;
+    height: 100px;
+    padding: 30px;
+    background: #222;
+    color: #fff;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+}
+
+
+
+
+
+/* // .form-control-wrap {
+// 	position: relative;
+// 	display: inline-block;
+// 	width: 100%;
+// } */
+
+
+.section-c .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.section-c .gallery a:first-child {
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+.section-c .gallery a:nth-child(2) {
+    grid-column: 2/4;
+    grid-row: 2/2;
+}
+
+.section-c .gallery a:last-child {
+    display: none;
+}
+.contact-form{
+    border: 1px solid rgb(244, 134, 28);;
+    border-radius: 10px;
 }
