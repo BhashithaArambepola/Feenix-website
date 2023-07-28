@@ -207,8 +207,9 @@ background: black !important;
 .features .nav-tabs {
     border: 0;
 }
-.navbar-img:hover{
-    animation: rotateAnimation 1s linear ;
+.navbar-img{
+   height: 65px !important;
+    width: auto;
 
 }
 @keyframes rotateAnimation {
