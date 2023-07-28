@@ -22,7 +22,7 @@ html{
     line-height: 48px;
 }
 .text-gray{
-    color: #c0c0c0; !important;
+    color: #6b6b6b !important;
 }
 .cover-services-list{
     /*line-height: 5px !important;*/
@@ -61,9 +61,9 @@ background: black !important;
 
 #home-cover{
     /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
-    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/beautiful-bird-graffiti-building.jpg");
+    background:linear-gradient(80deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.04) 80%), url("../img/home/beautiful-bird-graffiti-building.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
 
 
@@ -89,20 +89,20 @@ background: black !important;
 @media (max-width: 575px) {
     #home-cover{
         /*background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");*/
-        background-size: cover !important;
+        background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
 
     }
     #about-cover{
-        /*background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");*/
+        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
 
     }
     #home-portfolio{
-        /*background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/interior-design-with-armchair-potted-plant.jpg");*/
+        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/interior-design-with-armchair-potted-plant.jpg");
         background-size: cover;
         background-position: right center;
         background-repeat: no-repeat;
@@ -982,7 +982,7 @@ min-height: 70vh;
 
 /*service tabs*/
 .web-tab{
-    background:linear-gradient(90deg, rgb(23, 23, 23) 40%, rgba(23, 23, 23, 0.85) 60%, rgba(23, 23, 23, 0.07) 80%), url("../img/home/modern-businessman-working-computer-dark-office-generated-by-ai.jpg");
+    background:linear-gradient(90deg, rgb(17, 17, 17) 40%, rgba(31, 29, 29, 0.85) 60%, rgba(31, 29, 29, 0.07) 80%), url("../img/home/modern-businessman-working-computer-dark-office-generated-by-ai.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;

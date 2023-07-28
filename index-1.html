@@ -65,8 +65,8 @@
         <span>x</span>
     </div>
 </div>
-<!--<div id="cursor"></div>-->
-<!--<div id="cursor-blur"></div>-->
+<div id="cursor"></div>
+<div id="cursor-blur"></div>
 <!-- Spinner End -->
 
 
@@ -76,7 +76,7 @@
     <nav class="navbar navbar-expand-lg navbar-light py-2  wow fadeIn container-md" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0 d-flex justify-content-center align-items-center ">
             <img class="img-fluid  navbar-img" src="img/feenix logo.png" width="50" height="50">
-            <h3 class="px-3 text-gray">Studio Feenix</h3>
+            <h3 class="px-3 ">Studio Feenix</h3>
 
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -85,15 +85,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0 ">
                 <a href="index.html" class="nav-item nav-link cover-services-list active">Home</a>
-                <a href="AboutUs.html" class="nav-item nav-link cover-services-list text-gray">About Us</a>
-                <a href="ourServices.html" class="nav-item nav-link cover-services-list text-gray">Services</a>
+                <a href="AboutUs.html" class="nav-item nav-link cover-services-list ">About Us</a>
+                <div class="nav-item dropdown cover-services-list">
+                    <a href="ourServices.html" class="nav-item nav-link cover-services-list" >Services</a>
+                </div>
+                <a href="Portfolio.html" class="nav-item nav-link cover-services-list">Our Portfolio</a>
 
-                <a href="Portfolio.html" class="nav-item nav-link cover-services-list text-gray">Our Portfolio</a>
-
-<!--                <a href="contact.html" class="nav-item nav-link cover-services-list text-gray">Contact Us</a>-->
+                <a href="contact.html" class="nav-item nav-link cover-services-list">Contact Us</a>
             </div>
         </div>
-        <a href="contact.html#contactForm" class="ms-5 btn btn-primary  d-none d-lg-block btn-hire-us px-4">Contact Us</a>
+        <a href="contact.html#contactForm" class="ms-5 btn btn-primary  d-none d-lg-block btn-hire-us px-4">Hire Us</a>
     </nav>
 </div>
 <!-- Navbar End -->
@@ -119,11 +120,11 @@
             </div>
             <div class="row">
                 <div class="col-12 ">
-                    <ul class="list-group flex-column flex-sm-row main-header-sub-list ">
-                        <li  class="list-group-item pe-5 py-0 cover-services-list wow fadeInLeft text-gray" data-wow-delay="0.1s">Digital marketing</li>
-                        <li class="list-group-item pe-5 py-0 cover-services-list wow fadeInLeft text-gray" data-wow-delay="0.3s">Creative services</li>
-                        <li class="list-group-item pe-5 py-0 cover-services-list wow fadeInLeft text-gray" data-wow-delay="0.5s">Advertising</li>
-                        <li class="list-group-item pe-5 py-0 cover-services-list wow fadeInLeft text-gray" data-wow-delay="0.7s">Web designing and development</li>
+                    <ul class="list-group flex-column flex-sm-row main-header-sub-list">
+                        <li  class="list-group-item ps-0 cover-services-list wow fadeInLeft " data-wow-delay="0.1s">Digital Marketing</li>
+                        <li class="list-group-item ps-0 cover-services-list wow fadeInLeft " data-wow-delay="0.3s">Performance Marketing</li>
+                        <li class="list-group-item ps-0 cover-services-list wow fadeInLeft " data-wow-delay="0.5s">Web Development</li>
+                        <li class="list-group-item ps-0 cover-services-list wow fadeInLeft " data-wow-delay="0.7s">Creative Studio</li>
 
                     </ul>
                 </div>
@@ -132,10 +133,10 @@
         <div class="row pb-4">
             <div class="col-12 pt-8">
                 <ul class="list-group flex-row main-header-sub-list">
-                    <li class="list-group-item ps-0 cover-social-links"><i class="bi bi-facebook text-gray"></i></li>
-                    <li class="list-group-item cover-social-links"><i class="bi bi-instagram text-gray"></i></li>
-                    <li class="list-group-item cover-social-links"><i class="bi bi-tiktok text-gray"></i></li>
-                    <li class="list-group-item cover-social-links"><i class="bi bi-linkedin text-gray"></i></li>
+                    <li class="list-group-item ps-0 cover-social-links"><i class="bi bi-facebook"></i></li>
+                    <li class="list-group-item cover-social-links"><i class="bi bi-instagram"></i></li>
+                    <li class="list-group-item cover-social-links"><i class="bi bi-tiktok"></i></li>
+                    <li class="list-group-item cover-social-links"><i class="bi bi-linkedin"></i></li>
 
                 </ul>
             </div>
@@ -156,25 +157,29 @@
         <ul class="nav nav-tabs row g-2 d-flex">
 
             <li class="nav-item col-3 px-4">
-                <a class="nav-link active show " data-bs-toggle="tab" data-bs-target="#Digital_marketing">
-                    <h4 class="text-white">Digital marketing</h4>
+                <a class="nav-link active show " data-bs-toggle="tab" data-bs-target="#web">
+                    <h4 class="text-white">Web Designing
+                        & Development</h4>
                 </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item col-3 px-4">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Creative_services">
-                    <h4 class="text-white">Creative services</h4>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#software">
+                    <h4 class="text-white">Software
+                        Application Development</h4>
                 </a><!-- End tab nav item -->
             </li><!-- End tab nav item -->
             <li class="nav-item col-3 px-4">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Advertising">
-                    <h4 class="text-white">Advertising</h4>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Marketing">
+                    <h4 class="text-white">Digital
+                        Marketing</h4>
                 </a>
             </li><!-- End tab nav item -->
 
             <li class="nav-item col-3 px-4">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Web_development">
-                    <h4 class="text-white">Web designing and development</h4>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#Creative">
+                    <h4 class="text-white">Creative
+                        Studio</h4>
                 </a>
             </li><!-- End tab nav item -->
 
@@ -182,11 +187,12 @@
 
         <div class="tab-content ">
 
-            <div class="tab-pane active show web-tab p-5 min-vh-50" id="Digital_marketing">
+            <div class="tab-pane active show web-tab p-5 min-vh-50" id="web">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-between"
                          data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="text-white">Digital marketing</h3>
+                        <h3 class="text-white">Web Designing
+                            & Development</h3>
                         <p class=" large-f text-white">
                             With optimized functionality, an attractive UI, and so much more, we make sure that, in an
                             ocean of websites, yours will stand unique.
@@ -217,10 +223,11 @@
                 </div>
             </div><!-- End tab content item -->
 
-            <div class="tab-pane perfomanceMarketing-tab p-5 min-vh-50" id="Creative_services">
+            <div class="tab-pane perfomanceMarketing-tab p-5 min-vh-50" id="software">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-between">
-                        <h3 class="text-white">Creative services</h3>
+                        <h3 class="text-white">Software
+                            Application Development</h3>
                         <p class="large-f text-white">
                             Our talented crew of developers can pick up your requirement and turn it into the ideal
                             solution for your brand.
@@ -240,10 +247,10 @@
                 </div>
             </div><!-- End tab content item -->
 
-            <div class="tab-pane marketing-tab p-5 min-vh-50" id="Advertising">
+            <div class="tab-pane marketing-tab p-5 min-vh-50" id="Marketing">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-between">
-                        <h3 class="text-white">Advertising</h3>
+                        <h3 class="text-white">Digital Marketing</h3>
                         <p class="large-f text-white">
                             Making sure that your brand is turning heads and tempting clicks online, our crew will help
                             you navigate the waters of digital marketing.
@@ -263,10 +270,10 @@
                 </div>
             </div><!-- End tab content item -->
 
-            <div class="tab-pane creativeStudio-tab p-5 min-vh-50" id="Web_development">
+            <div class="tab-pane creativeStudio-tab p-5 min-vh-50" id="Creative">
                 <div class="row">
                     <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-between">
-                        <h3 class="text-white">Web designing and development</h3>
+                        <h3 class="text-white">Creative Studio</h3>
                         <p class="large-f text-white">
                             The look and feel of your brand should be nothing short of aesthetic. Our creative team
                             knows just how to conjure the perfect brand image.
@@ -292,75 +299,65 @@
 </section>
 
 <!------portfolio------->
-<section id="home-portfolio" class=" py-5 min-vh-50 d-flex justify-content-center align-items-center bg-dark">
-    <div class="container " data-aos="fade-up">
-        <div class="row">
-
-            <div class="col-md-10 col-12">
-                <h2 class="sub-header text-gray">Some of our cases</h2>
-                <p class="large-f text-gray">FEENIX, we take immense pride in our diverse range of services designed to elevate your brand to new heights in the digital world. Our portfolio is a testament to the passion and dedication we put into every project we undertake. Explore our past work and discover the success stories we have crafted in collaboration with our valued clients:</p>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-
+<div id="main">
+    <div id="page1">
+        <h1>EAT. DRINK. PLAY.</h1>
+        <h2>WELCOME TO SIDCUP FAMILY GOLF!</h2>
+        <p>
+            Sidcup Family Golf is a multipurpose golf facility located in Sidcup,
+            South East London. Passionate about technology, player development and
+            making golf fun and accessible to everyone.
+        </p>
 
     </div>
-</section>
-
-
-<!--======clients======-->
-<section id="clients" class="features bg-light py-5 d-flex justify-content-between align-items-start ">
-    <div class="container" data-aos="fade-up">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="sub-header pb-5 wow fadeInUp" data-wow-delay="0.3s">Our Clients</h2>
+    <div id="page2">
+        <div id="scroller">
+            <div id="scroller-in">
+                <h4>TOPTRACER RANGE</h4>
+                <h4>GOLF LESSONS</h4>
+                <h4>ADVENTURE GOLF</h4>
+                <h4>COFFEE SHOP</h4>
+                <h4>LEAGUES</h4>
             </div>
-            <div class="col-md-8">
-                <p class="large-f wow fadeInUp" data-wow-delay="0.5s">Each logo represents a unique story of growth, innovation, and accomplishments. Together, we've navigated the ever-changing landscape of digital marketing, crafting tailored strategies that drive meaningful results.
-
-                </p>
-                <p class="large-f wow fadeInUp" data-wow-delay="0.5s">
-                    FEENIX, we take immense pride in the strong partnerships we've built with our clients. Our commitment to excellence and a data-driven approach has helped businesses across diverse industries thrive and prosper.
-                </p>
-                <p class="large-f wow fadeInUp" data-wow-delay="0.5s">
-                    As we continue to soar to new heights, we extend our heartfelt gratitude to our clients for their trust and confidence in us. Join our esteemed roster of satisfied clients, and let's embark on a journey of digital triumph together.</p>
-            </div>
-            <div class="col-lg-12">
-                <div class="row d-flex justify-content-star">
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/cad.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.25s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/easy.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.35s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/gallecity.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.4s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/idear.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.45s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/mud.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.5s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/psd.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.55s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/RT.png" class="img-fluid clients-logo  wow fadeIn" data-wow-delay="0.6s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/sahas.png" class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.65s"></div>
-                    <div class="col-lg-2 col-4 py-3  d-flex justify-content-start"><img
-                            src="img/Logo/umandawa.png" alt="umandawa"  class="img-fluid clients-logo  wow fadeIn " data-wow-delay="0.75s"></div>
-
-
-                </div>
+            <div id="scroller-in">
+                <h4>TOPTRACER RANGE</h4>
+                <h4>GOLF LESSONS</h4>
+                <h4>ADVENTURE GOLF</h4>
+                <h4>COFFEE SHOP</h4>
+                <h4>LEAGUES</h4>
             </div>
         </div>
+
+    </div>
+    <div id="page3">
+        <p>
+            Excellent couple of hours, relax and enjoy in the fun. Staff were
+            accommodating, friendly and very helpful. Café on site for
+            refreshments etc. Will keep children enterntained during the holidays.
+            Worth a visit if you haven’t been.
+        </p>
+        <img
+                id="colon1"
+                src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+                alt=""
+        />
+        <img
+                id="colon2"
+                src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+                alt=""
+        />
+    </div>
+    <div id="page4">
+        <h1>WHAT ARE YOU WAITING FOR?</h1>
+
     </div>
 
-</section>
-
-
-
+</div>
 
 
 
 <!--======say hi======-->
-<section id="home-contact" class=" d-flex justify-content-center align-items-center bg-dark">
+<section id="home-contact" class=" d-flex justify-content-center align-items-center">
     <div class="container">
         <div class="row min-vh-4">
 
@@ -371,7 +368,8 @@
             <div class="col-12 col-lg-6 bg-primary d-flex align-items-center px-4 ">
                 <div class="py-5">
                 <h2>Co-build your brand</h2>
-                <p>If you're ready to take your business to soaring heights in the digital realm, we are here to help. Reach out to our expert team and let's embark on a journey of growth and success together. Whether you're a small start-up or an established enterprise, we have the experience and expertise to tailor effective digital marketing solutions to suit your unique needs.</p>
+                <p>At Times Internet, we offer effective digital marketing and advertising solutions to help brands
+                    connect with a large and diverse audience in their respective markets.</p>
 
                     <a href="#" class=" btn btn-outline-dark  btn-hire-us px-5 btn-lg">Connect With Us</a>
                 </div>
@@ -417,7 +415,7 @@
                 </div><!-- End footer info column-->
 
                 <div class="col-lg-2 col-md-3 footer-links">
-                    <h4 class="text-gray">Software Development</h4>
+                    <h4>Software Development</h4>
                     <ul>
                         <li>Web application</li>
                         <li>Software</li>
@@ -427,7 +425,7 @@
                 </div><!-- End footer links column-->
 
                 <div class="col-lg-2 col-md-3 footer-links">
-                    <h4 class="text-gray">Web Development</h4>
+                    <h4>Web Development</h4>
                     <ul>
                         <li>Wireframeing</li>
                         <li>Website Development</li>
@@ -437,7 +435,7 @@
                 </div><!-- End footer links column-->
 
                 <div class="col-lg-2 col-md-3 footer-links">
-                    <h4 class="text-gray">Creative Studio</h4>
+                    <h4>Creative Studio</h4>
                     <ul>
                         <li>Logo designing</li>
                         <li>Branding</li>
@@ -449,7 +447,7 @@
                 </div><!-- End footer links column-->
 
                 <div class="col-lg-2 col-md-3 footer-links">
-                    <h4 class="text-gray">Digital Marketing</h4>
+                    <h4>Digital Marketing</h4>
                     <ul>
                         <li></i>Content Marketing</li>
                         <li></i>Performance Marketing</li>

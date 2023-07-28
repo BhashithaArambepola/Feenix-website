@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
 }
 .bg-transparent{
-    background-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: rgba(23, 23, 23, 0.8) !important;
 }
 /*** Spinner ***/
 #spinner {
@@ -172,7 +172,7 @@ nav{
 
 .navbar .navbar-nav .nav-link {
     /*padding: 25px 15px;*/
-    color: black;
+    color: #c0c0c0;
     /*font-weight: 500;*/
     outline: none;
     font-weight: 500;
@@ -220,7 +220,7 @@ nav{
     font-size: 72px !important;
     font-weight: 500 !important;
     line-height: 56px !important;
-    color: #000000 !important;
+    color: #c0c0c0; !important;
     font-family: 'Euclid Circular B', sans-serif ;
 }
 
