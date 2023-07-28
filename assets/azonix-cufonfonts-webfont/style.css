@@ -25,3 +25,88 @@
 .bg-dark{
     background-color: rgb(23, 23, 23) !important;
 }
+
+/*** Project ***/
+.project-carousel {
+    position: relative;
+    background: rgb(23,23,23);
+}
+
+.project-item {
+    position: relative;
+    display: block;
+}
+
+.project-item img {
+    transition: .5s;
+}
+
+.project-item:hover img,
+.project-carousel .owl-item.center img {
+    margin-top: -60px;
+}
+
+.project-item .project-title {
+    position: absolute;
+    padding: 0 15px;
+    width: 100%;
+    height: 80px;
+    bottom: -110px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(23,23,23);
+    transition: .5s;
+}
+
+.project-item:hover .project-title,
+.project-carousel .owl-item.center .project-title  {
+    bottom: -60px;
+}
+
+.project-item .project-title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30px;
+    top: -15px;
+    left: 0;
+    transform: skewY(-5deg);
+    background: var(--primary);
+    transition: .5s;
+}
+
+.project-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    transition: .5s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.project-carousel:hover .owl-nav {
+    opacity: 1;
+}
+
+.project-carousel .owl-nav .owl-prev,
+.project-carousel .owl-nav .owl-next {
+    margin: 0 30px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}

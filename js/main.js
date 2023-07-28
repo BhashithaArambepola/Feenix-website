@@ -50,12 +50,10 @@
         return false;
     });
 
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
+    // Project carousel
+    $(".project-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        margin: 25,
         loop: true,
         center: true,
         dots: false,
@@ -66,46 +64,20 @@
         ],
         responsive: {
             0:{
-                items:1
-            },
-            768:{
                 items:2
             },
-            992:{
+            576:{
+                items:2
+            },
+            768:{
                 items:3
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:5
             }
         }
     });
-
-    
 })(jQuery);
-
-//--------------------------------
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    loop:true,
-    nav:false,
-    margin:10,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        960:{
-            items:2
-        },
-        1200:{
-            items:2
-        }
-    }
-});
-owl.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
-});
