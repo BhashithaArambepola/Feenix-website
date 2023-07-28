@@ -110,3 +110,21 @@
     font-size: 22px;
     transition: .5s;
 }
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: You can style the text and other elements inside the card as needed */
+.glass-card h3 {
+    /*color: #fff;*/
+    /*font-weight: bold;*/
+}
+
+.glass-card p {
+    /*color: #fff;*/
+}
