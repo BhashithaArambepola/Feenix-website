@@ -833,21 +833,22 @@ font-weight: 400 !important;
 #spin {
     color: #f4861c;
     font-weight: 700;
+    font-family: Montserrat !important;
  }
-#spin:after {
-    content:"";
-    animation: spin 6s linear infinite;
-}
-@keyframes spin {
-    0% { content:"#Success";}
+/*#spin:after {*/
+/*    content:"";*/
+/*    animation: spin 6s linear infinite;*/
+/*}*/
+/*@keyframes spin {*/
+/*    0% { content:"#Success";}*/
 
-    25% { content:"#Design";}
+/*    25% { content:"#Design";}*/
 
-    50% { content: "#Deliver"; }
+/*    50% { content: "#Deliver"; }*/
 
-    75% { content: "#Develop"; }
-    100% { content:"#Success";}
-}
+/*    75% { content: "#Develop"; }*/
+/*    100% { content:"#Success";}*/
+/*}*/
 
 #home-contact{
 min-height: 70vh;
