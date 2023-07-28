@@ -220,10 +220,13 @@ nav{
     font-size: 72px !important;
     font-weight: 500 !important;
     line-height: 56px !important;
-    color: #c0c0c0; !important;
+    color: transparent; !important;
     font-family: 'Euclid Circular B', sans-serif ;
-}
 
+}
+.stoke-white{
+    -webkit-text-stroke: 2px #c0c0c0 !important;
+}
 .list-group-item{
     border: none !important;
 }
