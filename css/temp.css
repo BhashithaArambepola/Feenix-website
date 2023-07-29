@@ -69,19 +69,19 @@ background: black !important;
 
 }
 #about-cover{
-    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/home-cover.jpg");
+    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/home-cover.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #portfolio-cover{
-    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/woman-art-exhibition.jpg");
+    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/portfolio/woman-art-exhibition.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 #contact-cover{
-    background:linear-gradient(79deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 65%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
+    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -304,9 +304,11 @@ background: black !important;
     margin-bottom: 0;
 }
 .bg-why-choose{
-background-image: url("../img/home/cover 1.jpg");
+background-image: url("../img/aboutUs/bckground 2.png");
+
+    /*background: rgb(23,23,23) !important;*/
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: right;
 }
 @media (max-width: 425px) {
@@ -339,7 +341,7 @@ background-image: url("../img/home/cover 1.jpg");
 }
 
 .service-item-1 .icon i {
-    color: #1c1c1c;
+    color: #f4861c;
     font-size: 60px;
     transition: ease-in-out 0.3s;
     z-index: 2;
@@ -352,7 +354,7 @@ background-image: url("../img/home/cover 1.jpg");
     content: "";
     height: 100%;
     width: 100%;
-    background: #f0f1f2;
+    background: rgba(192, 192, 192, 0.62);
     border-radius: 50px;
     z-index: 1;
     top: 10px;
@@ -361,7 +363,7 @@ background-image: url("../img/home/cover 1.jpg");
 }
 
 .service-item-1 h3 {
-    color: black;
+    color: #f0f0f0;
     font-weight: 500;
     margin: 0 0 20px 0;
     padding-bottom: 8px;
@@ -383,7 +385,7 @@ font-weight: 400 !important;
 }
 
 .service-item-1:hover .icon:before {
-    background: var(--secondary);
+    background:  #e2e4e6;
 }
 
 .service-item-1:hover h3 {

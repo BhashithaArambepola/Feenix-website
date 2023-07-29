@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6{
 
 :root {
     --primary: rgb(244, 134, 28);
-    --secondary: #f4861c ;
+    --secondary: rgb(244, 134, 28);
     --light: #c0c0c0;
     --dark: #e79c56;
 }
