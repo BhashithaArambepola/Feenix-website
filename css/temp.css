@@ -68,6 +68,13 @@ background: black !important;
 
 
 }
+.bg-dark{
+    background: rgb(23,23,23) !important;
+}
+
+.bg-dark-1{
+    background: rgb(45, 45, 45) !important;
+}
 #about-cover{
     background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/home-cover.jpg");
     background-size: cover;
