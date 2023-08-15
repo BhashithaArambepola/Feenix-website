@@ -61,7 +61,7 @@ background: black !important;
 
 #home-cover{
     /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
-    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/beautiful-bird-graffiti-building.jpg");
+    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../../Interview/feenix-final/img/home_page/beautiful-bird-graffiti-building.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,6 +118,7 @@ background: black !important;
 }
 .cover-social-links{
     font-size: 26px;
+    color: var(--light);
 }
 .cover-social-links:hover{
     background: var(--primary);
@@ -880,10 +881,11 @@ min-height: 70vh;
 #Services
 --------------------------------------------------------------*/
 .services-digital-marketing{
-    background:linear-gradient(79deg, rgba(255,255,255,0.1) 30%, rgb(255, 255, 255,0.7) 40%, rgba(255, 255, 255, 1) 60%), url("../img/home/portfolio/modern-art-studio-composition.jpg");
+    background:linear-gradient( rgba(0, 0, 0, 0.4) 0%, rgb(0, 0, 0.4) 100%), url("../img/home/portfolio/modern-art-studio-composition.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 /*** Service ***/

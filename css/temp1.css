@@ -61,7 +61,7 @@ background: black !important;
 
 #home-cover{
     /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
-    background:linear-gradient(80deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.04) 80%), url("../img/home/beautiful-bird-graffiti-building.jpg");
+    background:linear-gradient(80deg, rgba(255,255,255,1) 44%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.04) 80%), url("../../Interview/feenix-final/img/home_page/beautiful-bird-graffiti-building.jpg");
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;

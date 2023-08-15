@@ -137,3 +137,31 @@ body::-webkit-scrollbar-thumb {
 
     border-radius: 50px;
 }
+
+.service-1-img{
+    background-image: url("../img/aboutUs/bckground 1.png") !important;
+
+    /*background: rgb(23,23,23) !important;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+.text-h-light{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Montserrat Light";
+}
+
+.text-h-semi-bold{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: "Montserrat SemiBold";
+}
+
+.btn-close{
+    color: #f0f0f0 !important;
+}
