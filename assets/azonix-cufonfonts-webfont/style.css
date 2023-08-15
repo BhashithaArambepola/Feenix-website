@@ -127,12 +127,12 @@
 
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar , .modal::-webkit-scrollbar{
     display: block;
     width: 8px;
     background: var(--primary);
 }
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb , .modal::-webkit-scrollbar-thumb{
     background-color: #fff;
 
     border-radius: 50px;
