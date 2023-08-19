@@ -117,9 +117,15 @@ background: black !important;
 
     }
 }
+.sm-pack{
+    color: var(--light) !important;
+}
+.sm-pack:hover{
+    color: var(--secondary) !important;
+}
 .cover-social-links{
     font-size: 26px;
-    color: var(--light);
+    color: var(--light) !important;
 }
 .cover-social-links:hover{
     background: var(--primary);
