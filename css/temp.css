@@ -93,7 +93,7 @@ background: black !important;
 }
 
 #portfolio-cover{
-    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/fashion-artist-tailors-messy-textile-patterns-indoors-generated-by-ai.jpg");
+    background:linear-gradient(79deg, rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/fashion-artist-tailors-messy-textile-patterns-indoors-generated-by-ai.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
