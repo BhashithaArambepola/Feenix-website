@@ -85,7 +85,7 @@ background: black !important;
     background-repeat: no-repeat;
 }
 #service-cover{
-    background:linear-gradient(79deg,  rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/home/new (1)-min.jpg");
+    background:linear-gradient(79deg,  rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/home/laptop-with-graph-screen-that-says-29-it.jpg");
     /*background:linear-gradient(79deg, rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("img/home/new (1)-min.jpg") !important;*/
     background-size: cover;
     background-position: center;
