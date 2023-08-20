@@ -1,6 +1,7 @@
 /* Colors */
 html{
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 /* Smooth scroll behavior */
@@ -62,7 +63,8 @@ background: black !important;
 #home-cover{
     /*background:linear-gradient(79deg, rgba(255,255,255,1) 44%, #f4861c  55%);*/
     /*background: url("../../Interview/feenix-final/img/home_page/beautiful-bird-graffiti-building.jpg");*/
-    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/beautiful-bird-graffiti-building.jpg") !important;
+    background:linear-gradient(79deg, rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/home/beautiful-bird-graffiti-building.jpg") !important;
+
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -82,6 +84,14 @@ background: black !important;
     background-position: center;
     background-repeat: no-repeat;
 }
+#service-cover{
+    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/new (1)-min.jpg");
+    /*background:linear-gradient(79deg, rgb(23, 23, 23) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("img/home/new (1)-min.jpg") !important;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 #portfolio-cover{
     background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/portfolio/woman-art-exhibition.jpg");
     background-size: cover;
@@ -89,14 +99,14 @@ background: black !important;
     background-repeat: no-repeat;
 }
 #contact-cover{
-    background:linear-gradient(79deg, rgb(23, 23, 23) 44%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 100%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
+    background:linear-gradient(79deg, rgb(0, 0, 0) 25%, rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/home/portfolio/woman-creating-vision-board-side-view.jpg");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
 }
 @media (max-width: 575px) {
     #home-cover{
-        background:linear-gradient(79deg, rgba(255,255,255,1) 10%, rgb(255, 255, 255,0.7) 55%, rgba(255, 255, 255, 0.5) 100%), url("../img/home/beautiful-bird-graffiti-building.jpg") !important;
+        background:linear-gradient(79deg, rgb(0, 0, 0) 10%,rgb(23,23,23,0.7) 65%, rgba(23,23,23, 0.4) 90%), url("../img/home/beautiful-bird-graffiti-building.jpg") !important;
         background-size: cover !important;
         background-position: right center;
         background-repeat: no-repeat;
@@ -115,6 +125,11 @@ background: black !important;
         background-position: right center;
         background-repeat: no-repeat;
 
+    }
+
+    .say-hi {
+        font-size: 32px !important;
+        line-height: 40px !important;
     }
 }
 .sm-pack{
@@ -410,15 +425,15 @@ font-weight: 400 !important;
 # Content
 --------------------------------------------------------------*/
 .tec-stack{
-    width: 200px !important;
-    /*height: 100px;*/
+    width: 120px !important;
+    height: auto;
 }
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
 .clients-logo {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
 
 .section-border {

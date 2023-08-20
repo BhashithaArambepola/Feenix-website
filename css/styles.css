@@ -183,12 +183,16 @@ nav{
 .navbar .navbar-nav .nav-link.active {
     color: #f4861c;
 }
+.navbar-toggler{
+    background-color: rgba(244, 134, 28, 0.7) !important;
+    border-radius: 3px;
+}
 
 @media (max-width: 991.98px) {
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(0, 0, 0, .07);
-        background: #FFFFFF;
+        background: rgb(23,23,23);
     }
 
     .navbar .navbar-nav .nav-link {
@@ -256,7 +260,7 @@ nav{
         font-size: 48px !important;
         font-weight: 500 !important;
         line-height: 56px !important;
-        color: #000000 !important;
+        /*color: #000000 !important;*/
         font-family: 'Euclid Circular B', sans-serif ;
     }
 }
