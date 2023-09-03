@@ -3,5 +3,3 @@ deployment:
       tasks:
         - export DEPLOYPATH=/home/feenixma/public_html
         - /bin/cp -r * $DEPLOYPATH
-        -
-          //delete comment and run git push
