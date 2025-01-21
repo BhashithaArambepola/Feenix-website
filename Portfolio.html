@@ -1275,7 +1275,6 @@
         <div class="container">
             <div class="row">
 
-
                 <div class="col-lg-4 col-md-6 text-white ">
                     <div class="footer-info ">
                         <a href="index.html" class="navbar-brand ms-lg-0 d-flex align-items-center">
@@ -1346,6 +1345,7 @@
                         <li>Continuous Support & Maintenance</li>
                     </ul>
                 </div><!-- End footer links column-->
+
             </div>
         </div>
     </div>
@@ -1353,15 +1353,19 @@
     <div class="footer-legal text-center position-relative text-white">
         <div class="container">
             <div class="copyright text-gray">
-                2024 &copy; <strong > Feenix Digital (pvt) Limited</strong>. All Rights
+                <span id="current-year"></span> &copy; <strong> Feenix Digital (pvt) Limited</strong>. All Rights
                 Reserved
-
+            </div>
+            <div class="legal-links mt-1">
+                <a href="refund-return-policy.html" class="text-gray">Refund and Return Policy</a> |
+                <a href="data-privacy-policy.html" class="text-gray">Data Privacy Policy</a>
             </div>
         </div>
     </div>
 
 </footer>
 <!-- End Footer -->
+
 
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -1388,3 +1392,7 @@
 </body>
 
 </html>
+<script>
+    // Get the current year and update the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
