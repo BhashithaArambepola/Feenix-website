@@ -1,5 +1,5 @@
 ---
+type: deployment
 deployment:
   tasks:
     - /bin/rsync -av --exclude='.git' --exclude='.cpanel.yml' ./ /home/feenufzd/public_html/
-type: deployment
