@@ -30,8 +30,35 @@ h1,h2,h3,h4,h5,h6{
     position: fixed;
     display: none;
     right: 30px;
-    bottom: 30px;
+    bottom: 90px;
     z-index: 99;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top:hover {
+    background-color: #e67a1a;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        bottom: 80px;
+    }
 }
 
 .animate-icons{
@@ -345,4 +372,39 @@ nav{
 }
 .bottom-15{
     bottom: 15%;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
 }
