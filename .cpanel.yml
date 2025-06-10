@@ -1,5 +1,5 @@
 ---
 deployment:
-      tasks:
-        - export DEPLOYPATH=/home/feenufzd/public_html
-        - /bin/cp -r * $DEPLOYPATH
+  tasks:
+    - /bin/rsync -av --exclude='.git' --exclude='.cpanel.yml' ./ /home/feenufzd/public_html/
+type: deployment
