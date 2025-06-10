@@ -80,4 +80,18 @@
             }
         }
     });
+
+    // WhatsApp Button
+    function createWhatsAppButton() {
+        const whatsappButton = document.createElement('a');
+        whatsappButton.href = 'https://wa.me/94711509595';
+        whatsappButton.className = 'whatsapp-button';
+        whatsappButton.target = '_blank';
+        whatsappButton.innerHTML = '<i class="bi bi-whatsapp"></i>';
+        document.body.appendChild(whatsappButton);
+    }
+
+    // Initialize WhatsApp button
+    createWhatsAppButton();
+
 })(jQuery);
