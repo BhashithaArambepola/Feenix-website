@@ -16,6 +16,37 @@
     // Initiate the wowjs
     new WOW().init();
 
+    // AOS animations (CSS is loaded on several pages; without init, content stays hidden)
+    (function initAosAnimations() {
+        if (!document.querySelector('[data-aos]')) {
+            return;
+        }
+
+        function startAos() {
+            if (typeof AOS === 'undefined') {
+                return;
+            }
+
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        }
+
+        if (typeof AOS !== 'undefined') {
+            startAos();
+            return;
+        }
+
+        var script = document.createElement('script');
+        script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js';
+        script.async = true;
+        script.onload = startAos;
+        document.body.appendChild(script);
+    })();
+
 
     // Fixed Navbar
     $(window).scroll(function () {
