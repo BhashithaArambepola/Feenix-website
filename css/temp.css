@@ -23,7 +23,7 @@ html{
     line-height: 48px;
 }
 .text-gray{
-    color: #c0c0c0; !important;
+    color: #c0c0c0 !important;
 }
 .cover-services-list{
     /*line-height: 5px !important;*/
@@ -544,6 +544,22 @@ font-weight: 400 !important;
     text-decoration: none;
 }
 
+.footer .footer-content .footer-info a[href^="tel:"],
+.footer .footer-content .footer-info a[href^="mailto:"] {
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.footer .footer-content .footer-info a[href^="tel:"]:hover,
+.footer .footer-content .footer-info a[href^="mailto:"]:hover,
+.footer .footer-content .footer-info a[href^="tel:"]:focus,
+.footer .footer-content .footer-info a[href^="mailto:"]:focus,
+a[href^="mailto:"]:hover .text-gray,
+a[href^="tel:"]:hover {
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
 .footer .footer-content h4 {
     font-size: 16px;
     font-weight: 600;
@@ -652,6 +668,21 @@ font-weight: 400 !important;
     background-color: var(--dark);
     color: white;
 
+}
+
+.php-email-form .loading,
+.php-email-form .error-message,
+.php-email-form .sent-message {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.php-email-form .sent-message {
+    color: #198754;
+}
+
+.php-email-form .error-message {
+    color: #dc3545;
 }
 
 /*======AboutUs page========*/
@@ -1012,7 +1043,12 @@ min-height: 70vh;
     color: var(--primary);
     font-size: 28px;
     font-weight: 600;
+    transition: color 0.3s;
+}
 
+a:hover .call-number,
+.call-number:hover {
+    color: var(--dark) !important;
 }
 
 /*service tabs*/
