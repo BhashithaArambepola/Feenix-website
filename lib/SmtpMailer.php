@@ -15,8 +15,8 @@ class SmtpMailer
         $this->port = (int) $config['port'];
         $this->username = $config['username'];
         $this->password = $config['password'];
-        $this->encryption = $config['encryption'] ?? 'tls';
-        $this->timeout = (int) ($config['timeout'] ?? 30);
+        $this->encryption = $config['encryption'] ?? 'none';
+        $this->timeout = (int) ($config['timeout'] ?? 10);
     }
 
     public function send(string $to, string $subject, string $body, array $options = []): void
@@ -72,19 +72,29 @@ class SmtpMailer
     {
         $remote = match ($this->encryption) {
             'ssl' => 'ssl://' . $this->host . ':' . $this->port,
-            default => $this->host . ':' . $this->port,
+            default => 'tcp://' . $this->host . ':' . $this->port,
         };
+
+        $context = stream_context_create([
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true,
+            ],
+        ]);
 
         $socket = @stream_socket_client(
             $remote,
             $errno,
             $errstr,
             $this->timeout,
-            STREAM_CLIENT_CONNECT
+            STREAM_CLIENT_CONNECT,
+            $context
         );
 
         if (!$socket) {
-            throw new RuntimeException('SMTP connection failed: ' . $errstr);
+            $details = trim($errstr) !== '' ? $errstr : 'unable to connect to ' . $remote;
+            throw new RuntimeException('SMTP connection failed (' . $errno . '): ' . $details);
         }
 
         stream_set_timeout($socket, $this->timeout);
