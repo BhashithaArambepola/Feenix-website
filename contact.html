@@ -116,17 +116,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="row ">
             <div class="col-12 col-lg-4 pe-md-5 pb-5 pb-md-0 d-flex justify-content-center align-items-center ">
-                <form id="contactForm" class="col-12 contact-form php-email-form p-3 pt-5 wow fadeInUp shadow glass-card" data-wow-delay="0.3s" action="post.php" method="post">
+                <form id="contactForm" class="col-12 contact-form php-email-form p-4 pt-5 wow fadeInUp shadow glass-card" data-wow-delay="0.3s" action="post.php" method="post">
 
-                    <input class="form-control" name="name" placeholder="Name..." required/><br/>
-                    <input class="form-control" name="phone" placeholder="Phone..."/><br/>
-                    <input class="form-control" name="email" type="email" placeholder="E-mail..." required/><br/>
-                    <textarea class="form-control" name="text" placeholder="How can we help you?"
-                              style="height:150px;" required></textarea><br/>
-                    <div class="loading" style="display: none;">Sending...</div>
-                    <div class="error-message" style="display: none;"></div>
-                    <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
-                    <input class="btn btn-submit" type="submit" value="Send Message"/><br/><br/>
+                    <div class="contact-form-fields">
+                        <input class="form-control" name="name" placeholder="Name..." required/>
+                        <input class="form-control" name="phone" placeholder="Phone..."/>
+                        <input class="form-control" name="email" type="email" placeholder="E-mail..." required/>
+                        <textarea class="form-control" name="text" placeholder="How can we help you?" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-status loading" style="display: none;" role="status" aria-live="polite">
+                        <span class="form-status-spinner" aria-hidden="true"></span>
+                        <span class="form-status-text">Sending your message...</span>
+                    </div>
+                    <div class="form-status error-message" style="display: none;" role="alert" aria-live="assertive">
+                        <i class="bi bi-exclamation-circle-fill" aria-hidden="true"></i>
+                        <span class="form-status-text"></span>
+                    </div>
+                    <div class="form-status sent-message" style="display: none;" role="status" aria-live="polite">
+                        <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                        <span class="form-status-text">Your message has been sent. Thank you!</span>
+                    </div>
+
+                    <input class="btn btn-submit w-100" type="submit" value="Send Message"/>
                 </form>
             </div>
             <div class="col-12  col-lg-8 d-flex flex-column justify-content-center">
@@ -325,6 +337,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
     (function () {
         var form = document.getElementById('contactForm');
+        if (!form) {
+            return;
+        }
+
+        form.addEventListener('submit', function () {
+            var submitBtn = form.querySelector('.btn-submit');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.value = 'Sending...';
+            }
+        });
+
+        var observer = new MutationObserver(function () {
+            var loading = form.querySelector('.loading');
+            var submitBtn = form.querySelector('.btn-submit');
+            if (!submitBtn || !loading) {
+                return;
+            }
+            if (loading.classList.contains('d-block')) {
+                return;
+            }
+            submitBtn.disabled = false;
+            submitBtn.value = 'Send Message';
+        });
+
+        ['.loading', '.error-message', '.sent-message'].forEach(function (selector) {
+            var element = form.querySelector(selector);
+            if (element) {
+                observer.observe(element, { attributes: true, attributeFilter: ['class'] });
+            }
+        });
+    })();
+</script>
+<script>
+    (function () {
+        var form = document.getElementById('contactForm');
         if (!form || window.location.protocol !== 'file:') {
             return;
         }
@@ -344,7 +392,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 sent.classList.remove('d-block');
             }
             if (error) {
-                error.innerHTML = 'This form cannot run when the page is opened as a file. Run <strong>php -S localhost:8000</strong> in the project folder, then open <strong>http://localhost:8000/contact.html</strong>.';
+                var errorText = error.querySelector('.form-status-text');
+                if (errorText) {
+                    errorText.innerHTML = 'This form cannot run when the page is opened as a file. Run <strong>php -S localhost:8000</strong> in the project folder, then open <strong>http://localhost:8000/contact.html</strong>.';
+                } else {
+                    error.innerHTML = 'This form cannot run when the page is opened as a file. Run <strong>php -S localhost:8000</strong> in the project folder, then open <strong>http://localhost:8000/contact.html</strong>.';
+                }
                 error.classList.add('d-block');
             }
         }, true);

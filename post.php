@@ -37,7 +37,7 @@ $message .= "Email: {$email}\n\n";
 $message .= "Message:\n{$text}\n";
 
 $isLocalRequest = in_array($_SERVER['HTTP_HOST'] ?? '', ['localhost', 'localhost:8000', '127.0.0.1', '127.0.0.1:8000'], true);
-$showDebug = !empty($mailConfig['debug']) || $isLocalRequest;
+$showDebug = !empty($mailConfig['debug']);
 
 function buildSmtpAttempts(array $config): array
 {
@@ -95,7 +95,7 @@ function sendViaPhpMail(array $config, string $to, string $subject, string $body
 
     @ini_set('sendmail_from', $fromEmail);
 
-    return mail(
+    return @mail(
         $to,
         $subject,
         $body,
@@ -118,6 +118,11 @@ if (sendViaPhpMail($mailConfig, $mailConfig['to_email'], $subject, $message, $em
 }
 
 $errors[] = 'php mail() - sending failed';
+
+if ($isLocalRequest && !$showDebug) {
+    http_response_code(500);
+    exit('Email cannot be sent from local development. Please test on the live website.');
+}
 
 foreach (buildSmtpAttempts($mailConfig) as $attempt) {
     try {
