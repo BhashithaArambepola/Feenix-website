@@ -658,37 +658,129 @@ a[href^="tel:"]:hover {
 /*--------------------------------------------------------------
 # contact form Section
 --------------------------------------------------------------*/
-.btn-submit{
+.contact-form {
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+}
 
+.contact-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.contact-form .form-control {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #262626;
+    font-size: 14px;
+    line-height: 22px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.contact-form .form-control::placeholder {
+    color: #8a8a8a;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: 0 0 0 2px rgba(244, 134, 28, 0.45);
+    background: #fff;
+    outline: none;
+}
+
+.btn-submit {
     background-color: var(--secondary);
-    color: black;
-    border-radius: 5px;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
-.btn-submit:hover{
-    background-color: var(--dark);
-    color: white;
 
+.btn-submit:hover:not(:disabled) {
+    background-color: var(--primary);
+    color: #111;
+    transform: translateY(-1px);
 }
 
-.php-email-form .loading,
-.php-email-form .error-message,
-.php-email-form .sent-message {
+.btn-submit:disabled {
+    opacity: 0.75;
+    cursor: not-allowed;
+}
+
+.php-email-form .form-status {
     display: none !important;
-    margin-bottom: 1rem;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.php-email-form .form-status .form-status-text {
+    flex: 1;
+}
+
+.php-email-form .form-status i {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    flex-shrink: 0;
 }
 
 .php-email-form .loading.d-block,
 .php-email-form .error-message.d-block,
 .php-email-form .sent-message.d-block {
-    display: block !important;
+    display: flex !important;
+}
+
+.php-email-form .loading {
+    background: rgba(244, 134, 28, 0.18);
+    border: 1px solid rgba(244, 134, 28, 0.45);
+    color: var(--secondary);
 }
 
 .php-email-form .sent-message {
-    color: #198754;
+    background: rgba(244, 134, 28, 0.22);
+    border: 1px solid var(--primary);
+    color: var(--secondary);
+}
+
+.php-email-form .sent-message i {
+    color: var(--primary);
 }
 
 .php-email-form .error-message {
-    color: #dc3545;
+    background: rgba(220, 53, 69, 0.18);
+    border: 1px solid rgba(220, 53, 69, 0.55);
+    color: #ffd8dc;
+}
+
+.php-email-form .error-message i {
+    color: #ff8a96;
+}
+
+.form-status-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: contact-form-spin 0.8s linear infinite;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+@keyframes contact-form-spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*======AboutUs page========*/
@@ -1090,10 +1182,6 @@ a:hover .call-number,
 /*------------------------*/
 
 
-.contact-form{
-    border: 1px solid rgb(244, 134, 28);;
-    border-radius: 10px;
-}
 .bg-portfolio{
     /*background:linear-gradient(90deg, rgba(31, 29, 29, 0.2) , rgba(31, 29, 29, 0.2) ),url("img/home/portfolio/glowing-bonfire-burning-bright-fractal-blaze-pattern-generated-by-ai.jpg") !important;*/
     background:linear-gradient(90deg, rgb(255, 255, 255)40%, rgba(229, 229, 229, 0.9) ),url("../img/home/portfolio/woman-art-exhibition.jpg") !important;
