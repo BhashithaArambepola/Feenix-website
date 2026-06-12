@@ -673,8 +673,14 @@ a[href^="tel:"]:hover {
 .php-email-form .loading,
 .php-email-form .error-message,
 .php-email-form .sent-message {
-    display: none;
+    display: none !important;
     margin-bottom: 1rem;
+}
+
+.php-email-form .loading.d-block,
+.php-email-form .error-message.d-block,
+.php-email-form .sent-message.d-block {
+    display: block !important;
 }
 
 .php-email-form .sent-message {
