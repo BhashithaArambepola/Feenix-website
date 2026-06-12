@@ -1,15 +1,9 @@
 ---
 deployment:
   tasks:
-    # Repository is already located at /home/feenufzd/public_html
-    # We keep deployment as a no-op that still marks a successful deploy.
+    # Repository is already located at /home/feenufzd/public_html.
+    # Git pull updates files in place, so deployment only records success.
     - /bin/echo "Deployment triggered for Feenix-website at $(date)"
-    # If you later move the repo outside public_html, you can use rsync like below:
+    # If you later move the repo outside public_html, use rsync instead:
     # - export DEPLOYPATH=/home/feenufzd/public_html
     # - /bin/rsync -az --delete --exclude='.git*' --exclude='node_modules' ./ "$DEPLOYPATH/"
-
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/feenufzd/public_html
-    - /bin/cp -r * $DEPLOYPATH
